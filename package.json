@@ -1,6 +1,6 @@
 {
   "name": "zajno-react-ui-kit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ui-kit styles wrapped to ReactJS Component in React Native name-space. ",
   "main": "index.js",
   "scripts": {
