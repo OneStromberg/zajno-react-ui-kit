@@ -1,0 +1,24 @@
+{
+  "name": "zajno-react-ui-kit",
+  "version": "0.0.1",
+  "description": "ui-kit styles wrapped to ReactJS Component in React Native name-space. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneStromberg/zajno-react-ui-kit.git"
+  },
+  "keywords": [
+    "Zajno",
+    "Reactjs",
+    "Uikit"
+  ],
+  "author": "Zajno, Alex Stromberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneStromberg/zajno-react-ui-kit/issues"
+  },
+  "homepage": "https://github.com/OneStromberg/zajno-react-ui-kit#readme"
+}
