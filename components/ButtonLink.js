@@ -1,20 +1,59 @@
-import React from 'react';
-import Component from './Component';
-import _ from 'lodash';
+'use strict';
 
-class ButtonLink extends Component {
-    onClick(){
-        if (!_.isNil(this.props.onClick)){
-            this.props.onClick();
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Component2 = require('./Component');
+
+var _Component3 = _interopRequireDefault(_Component2);
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ButtonLink = function (_Component) {
+    _inherits(ButtonLink, _Component);
+
+    function ButtonLink() {
+        _classCallCheck(this, ButtonLink);
+
+        return _possibleConstructorReturn(this, (ButtonLink.__proto__ || Object.getPrototypeOf(ButtonLink)).apply(this, arguments));
+    }
+
+    _createClass(ButtonLink, [{
+        key: 'onClick',
+        value: function onClick() {
+            if (!_lodash2.default.isNil(this.props.onClick)) {
+                this.props.onClick();
+            }
         }
-    }
-    render(){
-        return(
-            <a onClick={this.onClick.bind(this)} href={this.props.href} className={"uk-button uk-button-link " + this.getClassName(this.props)}>
-                {this.props.children}
-            </a>
-        )
-    }
-}
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'a',
+                { onClick: this.onClick.bind(this), href: this.props.href, className: "uk-button uk-button-link " + this.getClassName(this.props) },
+                this.props.children
+            );
+        }
+    }]);
 
-export default ButtonLink;
+    return ButtonLink;
+}(_Component3.default);
+
+exports.default = ButtonLink;

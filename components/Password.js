@@ -1,33 +1,70 @@
-import React from 'react';
-import Component from './Component';
-import Input from './Input';
+'use strict';
 
-class Password extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Component2 = require('./Component');
+
+var _Component3 = _interopRequireDefault(_Component2);
+
+var _Input = require('./Input');
+
+var _Input2 = _interopRequireDefault(_Input);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Password = function (_Component) {
+    _inherits(Password, _Component);
+
+    function Password(props) {
+        _classCallCheck(this, Password);
+
+        var _this = _possibleConstructorReturn(this, (Password.__proto__ || Object.getPrototypeOf(Password)).call(this, props));
+
+        _this.state = {
             visible: false
-        }
-    }
-    onChange(e){
-        let value = e.target.value;
-        if(value.length > 0){
-            this.setState({visible: true})
-        }else{
-            this.setState({visible: false})
-        }
-    }
-    render(){
-        return(
-            <Input
-                className="password"
-                type="password" 
-                onChange={this.onChange.bind(this)}>
-                {this.state.visible ? <img className="show-password-icon" src="assets/roadmap/show-password-icon.png"/> : null}
-            </Input>
-        )
+        };
+        return _this;
     }
 
-}
+    _createClass(Password, [{
+        key: 'onChange',
+        value: function onChange(e) {
+            var value = e.target.value;
+            if (value.length > 0) {
+                this.setState({ visible: true });
+            } else {
+                this.setState({ visible: false });
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _Input2.default,
+                {
+                    className: 'password',
+                    type: 'password',
+                    onChange: this.onChange.bind(this) },
+                this.state.visible ? _react2.default.createElement('img', { className: 'show-password-icon', src: 'assets/roadmap/show-password-icon.png' }) : null
+            );
+        }
+    }]);
 
-export default Password;
+    return Password;
+}(_Component3.default);
+
+exports.default = Password;
