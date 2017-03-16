@@ -22,7 +22,6 @@ import View from './View';
 import ViewColor from './ViewColor';
 import Radio from './Radio';
 import Modal from './Modal';
-import Round from './Round';
 import TabBar from './TabBar';
 import TabButton from './TabButton';
 import Title from './Title';
@@ -35,6 +34,7 @@ import InputValidate from './InputValidate';
 import Switch from './Switch';
 import Notification from './Notification';
 import Section from './Section';
+import CircleImage from './CircleImage';
 
 export {
     Application, 
@@ -59,7 +59,6 @@ export {
     Radio, 
     Modal, 
     ImageButton, 
-    Round, 
     TabBar, 
     TabButton, 
     CardHeader, 
@@ -73,6 +72,7 @@ export {
     Switch,
     ButtonLink,
     Notification,
-    Section
+    Section,
+    CircleImage
 };
 

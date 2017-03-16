@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Section = exports.Notification = exports.ButtonLink = exports.Switch = exports.InputValidate = exports.Textarea = exports.Select = exports.Dropdown = exports.Subtitle = exports.Title = exports.ViewColor = exports.CardHeader = exports.TabButton = exports.TabBar = exports.Round = exports.ImageButton = exports.Modal = exports.Radio = exports.Checkbox = exports.Divider = exports.View = exports.Text = exports.ListItem = exports.List = exports.Link = exports.Label = exports.Input = exports.Image = exports.Header = exports.Footer = exports.Component = exports.Card = exports.Button = exports.Password = exports.Container = exports.AppBar = exports.Application = undefined;
+exports.CircleImage = exports.Section = exports.Notification = exports.ButtonLink = exports.Switch = exports.InputValidate = exports.Textarea = exports.Select = exports.Dropdown = exports.Subtitle = exports.Title = exports.ViewColor = exports.CardHeader = exports.TabButton = exports.TabBar = exports.ImageButton = exports.Modal = exports.Radio = exports.Checkbox = exports.Divider = exports.View = exports.Text = exports.ListItem = exports.List = exports.Link = exports.Label = exports.Input = exports.Image = exports.Header = exports.Footer = exports.Component = exports.Card = exports.Button = exports.Password = exports.Container = exports.AppBar = exports.Application = undefined;
 
 var _Application = require('./Application');
 
@@ -101,10 +101,6 @@ var _Modal = require('./Modal');
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Round = require('./Round');
-
-var _Round2 = _interopRequireDefault(_Round);
-
 var _TabBar = require('./TabBar');
 
 var _TabBar2 = _interopRequireDefault(_TabBar);
@@ -153,6 +149,10 @@ var _Section = require('./Section');
 
 var _Section2 = _interopRequireDefault(_Section);
 
+var _CircleImage = require('./CircleImage');
+
+var _CircleImage2 = _interopRequireDefault(_CircleImage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Application = _Application2.default;
@@ -177,7 +177,6 @@ exports.Checkbox = _Checkbox2.default;
 exports.Radio = _Radio2.default;
 exports.Modal = _Modal2.default;
 exports.ImageButton = _ImageButton2.default;
-exports.Round = _Round2.default;
 exports.TabBar = _TabBar2.default;
 exports.TabButton = _TabButton2.default;
 exports.CardHeader = _CardHeader2.default;
@@ -192,3 +191,4 @@ exports.Switch = _Switch2.default;
 exports.ButtonLink = _ButtonLink2.default;
 exports.Notification = _Notification2.default;
 exports.Section = _Section2.default;
+exports.CircleImage = _CircleImage2.default;
